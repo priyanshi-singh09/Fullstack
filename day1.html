@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f2f2f2;
+        }
+
+        .card{
+            width:350px;
+            background:#fff;
+            border-radius:15px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);
+            text-align:center;
+            padding:25px;
+            border:2px solid #ddd;
+        }
+
+        .profile{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover;
+            border:4px solid #007BFF;
+            margin-bottom:15px;
+        }
+
+        h1{
+            font-size:28px;
+            color:#333;
+            margin-bottom:10px;
+        }
+
+        h2,h3{
+            color:#666;
+            margin-bottom:8px;
+        }
+
+        .button-container{
+            margin-top:25px;
+            display:flex;
+            justify-content:center;
+            gap:15px;
+        }
+
+        button{
+            padding:10px 20px;
+            border:none;
+            border-radius:8px;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .share-btn{
+            background:#007BFF;
+        }
+
+        .share-btn:hover{
+            background:#0056b3;
+        }
+
+        .alert-btn{
+            background:#dc3545;
+        }
+
+        .alert-btn:hover{
+            background:#b02a37;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+       
+        <img src="image.png" alt="Profile Photo" class="image">
+
+        <h1>Priyanshi Singh</h1>
+        <h2>2401640100764</h2>
+        <h3>CS3J</h3>
+
+        <div class="button-container">
+           <button class="share-btn" onclick="window.open('https://www.linkedin.com/in/priyanshi-singh-003931323/', '_blank')">Share</button>
+           <button class="alert-btn" onclick="window.open('https://www.linkedin.com/in/priyanshi-singh-003931323/')">Alert</button>
+
+       </div>
+
+    </div>
+
+</body>
+</html>
